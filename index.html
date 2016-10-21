@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>My simple Javascript Calculator</title>
-    <style href="style.css"></style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <div id="calculator-box">
@@ -10,28 +10,28 @@
         <input type="text" class="answer-box" name="answer"/>
         <br/>
 
-        <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
-        <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
-        <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
-        <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+        <input class="button" type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+        <input class="button" type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+        <input class="button" type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+        <input class="ops-button button" type="button" value=" + " onclick="calculator.answer.value += '+'" />
         <br/>
 
-        <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
-        <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
-        <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
-        <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+        <input class="button" type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+        <input class="button" type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+        <input class="button" type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+        <input class="ops-button button" type="button" value=" - " onclick="calculator.answer.value += '-'" />
         <br/>
 
-        <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
-        <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
-        <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
-        <input type="button" value=" * " onclick="calculator.answer.value += '*'" />
+        <input class="button" type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+        <input class="button" type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+        <input class="button" type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+        <input class="ops-button button" type="button" value=" * " onclick="calculator.answer.value += '*'" />
         <br/>
 
-        <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
-        <input type="button" value=" c " onclick="calculator.answer.value = ''" />
-        <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
-        <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+        <input class="button" type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+        <input class="clear-button button" type="button" value=" c " onclick="calculator.answer.value = ''" />
+        <input class="eval-button button" type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+        <input class="ops-button button" type="button" value=" / " onclick="calculator.answer.value = '/'" />
         <br/>
       </form>
     </div>
